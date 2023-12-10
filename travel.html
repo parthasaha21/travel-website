@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>travel-demo-page</title>
+        <link rel="stylesheet" href="travel.css">
+        <script src="https://kit.fontawesome.com/4b8bc3066b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <!-- bootstrap cdm -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- navbar start -->
+        <div class="nav">
+            <nav class="navbar  navbar-expand-lg navbar- fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand  demo-word text-white " href="#">Travel demo page</a>
+                    <button
+                        class="navbar-toggler shadow-none border-0"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class=" sidebar offcanvas offcanvas-start"
+                        tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                    >
+                        <div class="offcanvas-header text-white border-bottom">
+                            <h5 class="offcanvas-title " id="offcanvasNavbarLabel">About</h5>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white shadow-none"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body  d-flex flex-column  flex-lg-row p-4 p-lg-0">
+                            <ul class="navbar-nav justify-content-center  align-items-center flex-grow-1 pe-3 text-white ">
+                                <li class="nav-item d-flex">
+                                    <i class="fa-solid fa-plane "></i>
+                                    <a class="nav-link mx-2 px-3 py-1  rounded-5 text-white ps-4" aria-current="page" href="#">Flights</a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-train"></i>
+                                    <a class="nav-link mx-2 ps-4 py-1 rounded-5 text-white" href="#">Trains</a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa-sharp fa-solid fa-bus"></i>
+                                    <a class="nav-link mx-2 ps-4 py-1 rounded-5 text-white" href="#">Bus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-hotel"></i>
+                                    <a class="nav-link mx-2 ps-4 py-1 rounded-5 text-white" href="#">Hotels</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center gap-3 flex-column flex-lg-row">
+                                <a href="" class="text-white  text-decoration-none">Register</a>
+                                <a href="" class="text-white text-decoration-none px-3 py-1 rounded-4 " style="background-color: #f94ca4;">Sing Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar end -->
+        <!-- header img start -->
+        <div class="header-image justify-content-center d-flex pt-5">
+            <img
+                src="https://img.freepik.com/free-vector/travel-tourism-illustration-with-resort-sightseeing-elements_1284-30189.jpg?w=1380&t=st=1693985353~exp=1693985953~hmac=ec16d623e52a620f8301f62fade0e7125f392d552b75737d3a1baa27a56e842f"
+                width="100%"
+                height="100%"
+                alt=""
+            >
+        </div>
+        <!-- header img end -->
+        <!-- city div start -->
+        <div class="container citys-div">
+            <div class=" pb-4 flag">
+                <h4 class="font-bold"> Explore India</h4>
+            </div>
+            <div class=" row ">
+                <div class="col-12 col-lg-4 col-md-4">
+                    <div class="image-area">
+                        <img src="https://cf.bstatic.com/xdata/images/city/600x600/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" width="100%">
+                        <div class="image-text">
+                            <h3>New Dheli
+                            </p>
+                            <h5>Visit Now</h5>
+                            <a href="" target="_blank">
+                                <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4">
+                    <div class="image-area">
+                        <img src="https://cf.bstatic.com/xdata/images/city/600x600/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o=">
+                        <div class="image-text">
+                            <h3>Bangalore
+                            </p>
+                            <h5>Visit Now</h5>
+                            <a href="" target="_blank">
+                                <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4">
+                    <div class="image-area">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/12/08/29/victoria-memorial-2394784_1280.jpg">
+                        <div class="image-text">
+                            <h3>Kolkata
+                            </p>
+                            <h5>Visit Now</h5>
+                            <a href="" target="_blank">
+                                <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row mt-5">
+                <div class=" col-12 col-lg-4 col-md-4">
+                    <div class="image-area">
+                        <img src="https://cf.bstatic.com/xdata/images/city/600x600/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o=">
+                        <div class="image-text">
+                            <h3>Mumbai
+                            </p>
+                            <h5>Visit Now</h5>
+                            <a href="" target="_blank">
+                                <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4">
+                    <div class="image-area">
+                        <img src="https://cf.bstatic.com/xdata/images/city/600x600/684730.jpg?k=e37b93d88c1fe12e827f10c9d6909a1def7349be2c68df5de885deaa4bc01ee3&o=">
+                        <div class="image-text">
+                            <h3>Channai
+                            </p>
+                            <h5>Visit Now</h5>
+                            <a href="" target="_blank">
+                                <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4">
+                    <div class="image-area">
+                        <img src="https://cf.bstatic.com/xdata/images/city/600x600/684653.jpg?k=306ccafcc8a4a7e23b9e8a05b183453fe885b312a4daa5ce76ec39a1b79cbc6f&o=">
+                        <div class="image-text">
+                            <h3>Hayderabad
+                            </p>
+                            <h5>Visit Now</h5>
+                            <a href="" target="_blank">
+                                <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- city-div end -->
+            <!--  hotel-div start -->
+            <div id="carouselExampleInterval" class="carousel slide container mt-5" data-bs-ride="carousel">
+                <div>
+                    <h4 class="pb-3">Stay at our top unique properties</h4>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-700005434591922350/original/93c62bdc-5919-494a-8f10-cbf534989116.jpeg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lonavla India</h5>
+                                        <p class="card-text">Pavana lake,India
+                                            <br>
+                                            8-13 sep
+                                            <br>
+                                            <span>₹4,499 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/27013fec-93f9-4250-b9b6-0004a3f6aefb.jpg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Kainakary South, India
+                                        </h5>
+                                        <p class="card-text"> Vattakkaayal
+                                            <br>
+                                            9–14 Sep
+                                            <br>
+                                            <span> ₹3,800 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-507741036516104287/original/55cdb8e1-85b4-4948-b116-671e1d161800.jpeg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Dahuli, India
+                                        </h5>
+                                        <p class="card-text">Andhra Lake
+                                            <br>
+                                            11–16 Sep
+                                            <br>
+                                            <span>₹6,276 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-888826359906290076/original/79c8e4be-75ea-4790-8c25-0637caa8e0de.jpeg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Kolechafesar, India
+                                        </h5>
+                                        <p class="card-text">  Pavana Lake
+                                            <br>
+                                            11–16 Sep
+                                            <br>
+                                            <span> ₹34,692 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="row">
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/208799bb-a234-4cc9-8d4c-25241be061e8.jpg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Alappuzha, India
+                                        </h5>
+                                        <p class="card-text">Chengandalake
+                                            <br>
+                                            20–25 Sep
+                                            <br>
+                                            <span> ₹28,529 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-48104213/original/3e48dc38-397d-40af-906b-fbb641626b14.jpeg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Udaipur, India
+                                        </h5>
+                                        <p class="card-text"> Lake views
+                                            <br>
+                                            10–15 Sep
+                                            <br>
+                                            <span>₹2,853 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-777935213413071065/original/efec4b0b-e599-4e0b-9777-83a1e37f91bc.jpeg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Nashik, India
+                                        </h5>
+                                        <p class="card-text">Lake and garden views
+                                            <br>
+                                            10–15 Sep
+                                            <br>
+                                            <span>    ₹10,919 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-629505065235913525/original/2802fad6-7498-4dde-824a-dc269946db29.jpeg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Murud, India
+                                        </h5>
+                                        <p class="card-text"> Beach and mountain views
+                                            <br>
+                                            10–15 Sep
+                                            <br>
+                                            <span>₹8,511 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/ed964c73-81be-4222-a742-48ed60294345.jpg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Pune, India
+                                        </h5>
+                                        <p class="card-text"> Mountain and lake views
+                                            <br>
+                                            10–15 Sep
+                                            <br>
+                                            <span> ₹6,500 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-701222856355831951/original/a280ef50-d7f2-4f72-be8e-11617cb82450.jpeg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Malavli, India
+                                        </h5>
+                                        <p class="card-text">Mountain and garden views
+                                            <br>
+                                            10–15 Sep
+                                            <br>
+                                            <span> ₹23,772 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/32c0249e-3fd7-4335-b608-60b5d17acda1.jpg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Kalote Mokashi, India
+                                        </h5>
+                                        <p class="card-text">Lake and garden views
+                                            <br>
+                                            10–15 Sep
+                                            <br>
+                                            <span>₹14,036 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-div col-12 col-md-3 col-lg-3">
+                                <div class="card" style="width:18rem;">
+                                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-606205233674501892/original/97bc4793-944a-4f91-86c7-1ea8e695b80a.jpeg?im_w=720" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Kalote Mokashi, India
+                                        </h5>
+                                        <p class="card-text">Lake and pool views
+                                            <br>
+                                            10–15 Sep
+                                            <br>
+                                            <span>₹43,499 night</span>
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon btn btn-primary p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden btn btn-danger">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon btn btn-primary p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- card-div end -->
+            <!-- 2nd card div start -->
+            <div class="container 2nd-card-div ">
+                <h4 class="mt-5">Popular Destinations</h4>
+                <p>We have selected some best locations around the world for you.</p>
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-md-4">
+                       <a href=""><div class="card-area ">
+                            <img src="https://t3.ftcdn.net/jpg/05/86/08/36/360_F_586083677_n8SZTttHChHRiytg0kfu8nW6fPvM3nxZ.jpg" width="100%">
+                            <div id="sc-card-text">
+                                <h3>Pattaya
+                                  
+                                   </h3>
+                                <p>A lively and vibrant coastal city</p>
+                                <h5>book Now</h5>
+                                <a href="" target="_blank">
+
+                                </a>
+                            </div>
+                        </div></a> 
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <a href=""><div class="card-area">
+                           <img src="https://c4.wallpaperflare.com/wallpaper/403/119/614/singapore-4k-full-hd-wallpaper-preview.jpg" width="100%">
+                           <div id="sc-card-text">
+                               <h3>Singapore
+                                
+                                 
+                                  </h3>
+                               <p>The city of vast green spaces and glittering skyline</p>
+                               <h5>book Now</h5>
+                               <a href="" target="_blank">
+                               </a>
+                           </div>
+                       </div></a> 
+                   </div>
+
+                   <div class="col-12 col-lg-4 col-md-4">
+                    <a href=""><div class="card-area">
+                         <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWl8ZW58MHx8MHx8fDA%3D&w=1000&q=80" width="100%">
+                         <div id="sc-card-text">
+                             <h3>Dubai
+                            
+                                </h3>
+                             <p>  Treasured gem of the Emirates</p>
+                             <h5>book Now</h5>
+                             <a href="" target="_blank">
+                             </a>
+                         </div>
+                     </div></a> 
+                 </div>
+                </div>
+
+                <div class="row mt-5">
+                  <div class="col-12 col-lg-4 col-md-4">
+                     <a href=""><div class="card-area ">
+                          <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG9uZG9uJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" width="100%">
+                          <div id="sc-card-text">
+                              <h3>London
+                               
+                                
+                                
+                                
+                                 </h3>
+                              <p> Renowned as the fashion capital of the UK</p>
+                              <h5>book Now</h5>
+                              <a href="" target="_blank">
+
+                              </a>
+                          </div>
+                      </div></a> 
+                  </div>
+
+                  <div class="col-12 col-lg-4 col-md-4">
+                    <a href=""><div class="card-area">
+                         <img src="https://media.cntraveler.com/photos/57d87670fd86274a1db91acd/1:1/w_1536,h_1536,c_limit/most-beautiful-paris-pont-alexandre-iii-GettyImages-574883771.jpg" width="100%">
+                         <div id="sc-card-text">
+                             <h3>Paris
+                             
+                              
+                               
+                                </h3>
+                             <p> 
+                              The City of Light</p>
+                             <h5>book Now</h5>
+                             <a href="" target="_blank">
+                             </a>
+                         </div>
+                     </div></a> 
+                 </div>
+
+                 <div class="col-12 col-lg-4 col-md-4">
+                  <a href=""><div class="card-area">
+                       <img src="https://cdn1.matadornetwork.com/blogs/1/2021/05/maldives-resorts-2-1200x900.jpg" width="100%">
+                       <div id="sc-card-text">
+                           <h3>Maldives
+                           
+                              </h3>
+                           <p> An ultimate luxurious and romantic holiday destination</p>
+                           <h5>book Now</h5>
+                           <a href="" target="_blank">
+                           </a>
+                       </div>
+                   </div></a> 
+               </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-12 col-lg-4 col-md-4">
+                   <a href=""><div class="card-area ">
+                        <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG9uZG9uJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" width="100%">
+                        <div id="sc-card-text">
+                            <h3>London
+                             
+                              
+                              
+                              
+                               </h3>
+                            <p> Renowned as the fashion capital of the UK</p>
+                            <h5>book Now</h5>
+                            <a href="" target="_blank">
+
+                            </a>
+                        </div>
+                    </div></a> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-4">
+                  <a href=""><div class="card-area">
+                       <img src="https://media.cntraveler.com/photos/57d87670fd86274a1db91acd/1:1/w_1536,h_1536,c_limit/most-beautiful-paris-pont-alexandre-iii-GettyImages-574883771.jpg" width="100%">
+                       <div id="sc-card-text">
+                           <h3>Paris
+                           
+                            
+                             
+                              </h3>
+                           <p> 
+                            The City of Light</p>
+                           <h5>book Now</h5>
+                           <a href="" target="_blank">
+                           </a>
+                       </div>
+                   </div></a> 
+               </div>
+
+               <div class="col-12 col-lg-4 col-md-4">
+                <a href=""><div class="card-area">
+                     <img src="https://cdn1.matadornetwork.com/blogs/1/2021/05/maldives-resorts-2-1200x900.jpg" width="100%">
+                     <div id="sc-card-text">
+                         <h3>Maldives
+                         
+                            </h3>
+                         <p> An ultimate luxurious and romantic holiday destination</p>
+                         <h5>book Now</h5>
+                         <a href="" target="_blank">
+                         </a>
+                     </div>
+                 </div></a> 
+             </div>
+            </div>
+            </div>
+            <!-- 2nd card div end -->
+            <!-- boking-div start -->
+            <div class="container mt-5 book-div">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 photo">
+                  <img src="https://img.freepik.com/premium-psd/flat-lay-copyspace-mockup-summer-concepts_23-2148200236.jpg" alt="">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 form-div">
+                <form action="#">
+                    <input type="text" class="form-control" placeholder="where To" required><br>
+                    <input type="text" class="form-control" placeholder="How many" required><br>
+                    <input type="email" class="form-control" placeholder="email" required><br>
+                    <textarea class="form-control" rows="5" name="text" placeholder="Enter your name & details"></textarea>
+                    <input type="submit" value="Book Now" class="submit" required>
+                </form>
+              </div>
+            </div>
+            </div>
+            <!-- boking-div end-->
+
+              <!-- footer div -->
+
+              <footer>
+                <div class="container footer-div mt-5" id="footer">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 col-md-6">
+                             <h1 class="fw-bold">OUR PRODUCTS</h1>
+                            <p><a href="">Domestic Hotels</a> <br>
+                               <a href=""> International Hotels</a><br>
+                               <a href="">Domestic Flights  </a>  <br>
+                               <a href="">International Flights</a><br>
+                               <a href="">Bus Booking
+                            </a><br>
+                               <a href="">Train Ticket Booking</a><br>
+
+                        </div>
+        
+                        <div class="col-6 col-lg-3 col-md-6">
+                             <h1 class="fw-bold">COMPANY
+                            </h1>
+                            <p><a href="">                                
+                                          About Us</a><br>
+                                <a href=""> Terms & Conditions</a><br>
+                                <a href="">User Agreement</a><br>
+                                <a href=""> Privacy</a><br>
+                                <a href="">Customer Support</a><br>
+                                <a href="">Careers</a><br>
+                                <a href=""> Corporate Social Responsibility</a><br>
+                                <a href="">  travel on Mobile</a><br>
+                               
+                                </p>
+                        </div>
+        
+                        <div class="col-6 col-lg-3 col-md-6">
+                             <h1 class="fw-bold">TRAVEL RESOURCES
+                            </h1>
+                            <p><a href=""> Popular Bus Routes</a><br>
+                                <a href="">  Train PNR Status</a><br>
+                                <a href=""> Airport Cabs</a><br>
+                                <a href="">Hotels in India</a><br>
+                                <a href="">Popular Airlines</a><br>
+                                <a href=""> International Airports</a><br>
+                                <a href=""> City Airline Routes</a><br>
+                                <a href=""> International Travel Guide</a><br>
+                               </p>
+                        </div>
+        
+                        <div class="col-6 col-lg-3 col-md-6">
+                             <h1 class="fw-bold">Follow Us
+                            </h1>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=100021996673749" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            </footer>
+        </body>
+    </html>
